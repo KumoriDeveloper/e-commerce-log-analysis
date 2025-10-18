@@ -1,0 +1,46 @@
+# Конфигурация для E-Commerce Log Analysis System
+
+# OpenAI API настройки
+OPENAI_API_KEY = "your-openai-api-key-here"
+OPENAI_MODEL = "gpt-3.5-turbo"
+OPENAI_EMBEDDING_MODEL = "text-embedding-ada-002"
+
+# Redis настройки
+REDIS_HOST = "localhost"
+REDIS_PORT = 6379
+REDIS_DB = 0
+REDIS_PASSWORD = None
+
+# Elasticsearch настройки
+ELASTICSEARCH_HOST = "localhost:9200"
+ELASTICSEARCH_INDEX = "incident-solutions"
+ELASTICSEARCH_USERNAME = None
+ELASTICSEARCH_PASSWORD = None
+
+# Настройки анализа логов
+MAX_RESPONSE_TIME_THRESHOLD = 2.0  # секунды
+SLOW_REQUEST_THRESHOLD = 5.0  # секунды
+MIN_ERROR_COUNT_FOR_BOTTLENECK = 2
+
+# RAG настройки
+SEMANTIC_SEARCH_THRESHOLD = 0.8
+MAX_SIMILAR_CASES = 5
+MAX_TOKENS_FOR_SOLUTION = 500
+
+# Метрики
+BASE_COMPLAINTS_LEVEL = 100
+TARGET_REDUCTION_RATE = 0.25  # 25% за 6 месяцев
+OPERATION_MONTHS = 6
+
+# Логирование
+LOG_LEVEL = "INFO"
+LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Паттерны ошибок для обнаружения
+ERROR_PATTERNS = {
+    'timeout': r'timeout|timed out',
+    'database': r'database|sql|connection',
+    'payment': r'payment|transaction|checkout',
+    'authentication': r'auth|login|session',
+    'api': r'api|endpoint|request failed'
+}
