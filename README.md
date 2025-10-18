@@ -155,7 +155,7 @@ python example.py
 
 ## 📞 Поддержка
 
-Если у вас есть вопросы или предложения, создайте [Issue](https://github.com/yourusername/e-commerce-log-analysis/issues) в репозитории.
+Если у вас есть вопросы или предложения, создайте [Issue](https://github.com/wezwrite/e-commerce-log-analysis/issues) в репозитории.
 
 ## 🚀 Roadmap
 
