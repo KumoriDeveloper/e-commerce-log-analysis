@@ -14,12 +14,12 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 setup(
     name="ecommerce-log-analysis",
     version="1.0.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="KumoriDeveloper",
+    author_email="noname.hvh2@gmail.com",
     description="Система анализа логов e-commerce с использованием RAG и машинного обучения",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/e-commerce-log-analysis",
+    url="https://github.com/KumoriDeveloper/e-commerce-log-analysis",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -53,8 +53,8 @@ setup(
     },
     keywords="ecommerce, logging, analysis, rag, machine-learning, elasticsearch, redis",
     project_urls={
-        "Bug Reports": "https://github.com/yourusername/e-commerce-log-analysis/issues",
-        "Source": "https://github.com/yourusername/e-commerce-log-analysis",
-        "Documentation": "https://github.com/yourusername/e-commerce-log-analysis#readme",
+        "Bug Reports": "https://github.com/KumoriDeveloper/e-commerce-log-analysis/issues",
+        "Source": "https://github.com/KumoriDeveloper/e-commerce-log-analysis",
+        "Documentation": "https://github.com/KumoriDeveloper/e-commerce-log-analysis#readme",
     },
 )
